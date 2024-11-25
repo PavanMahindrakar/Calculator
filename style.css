@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg'); 
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the image */
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background-color: rgba(114, 152, 67, 0);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(206, 147, 147, 0.952);
+  padding: 20px;
+  width: 320px;
+}
+
+.calculator-title {
+  font-size: 24px; /* Font size for the title */
+  color: white; /* Title color */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #eaeaea;
+}
+#display:hover{
+  transform: scale(1.05);
+  box-shadow: 8px 8px 15px #eeaf7c;
+  transition: transform 0.5s;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00203FFF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5f9de0;
+}
+
+button:active {
+  background-color: #64a7eb;
+}
+
+.equal {
+  background-color: #28a745;
+}
+
+.equal:hover {
+  background-color: #218838;
+}
+
+.equal:active {
+  background-color: #1e7e34;
+}
+
+.heading{
+  color: whitesmoke;
+  padding: 5vh;
+  margin: 5vh;
+}
